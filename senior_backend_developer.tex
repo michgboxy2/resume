@@ -1,0 +1,265 @@
+%-------------------------
+% Resume in Latex
+% Author : Elufioye Michael
+% Based off of: https://github.com/michgboxy2
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Elufioye Michael} \\ \vspace{1pt}
+    \small $|$ \href{mailto:michgboxy@gmail.com}{\underline{michgboxy@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/michgboxy}{\underline{linkedin.com/in/michgboxy}} $|$
+    \href{https://github.com/michgboxy2}{\underline{github.com/michgboxy2}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Obafemi Awolowo University}{Ile-fe}
+      {Departments of Biochemistry}{Aug. 2009 -- Nov 2013}
+  
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tizeti inc (YC 17)}{December 2023 -- Present}
+      {Senior Backend Developer}{Lagos}
+      \resumeItemListStart
+          \resumeItem{Designed and developed \textbf{TizetiOS}, the core operational software powering Tizeti's business operations across Nigeria, Ghana, and Côte d'Ivoire.}
+          \resumeItem{Implemented critical modules such as billing, invoicing, and payroll systems to streamline internal processes for the account and admin team.}
+          \resumeItem{Led the development of \textbf{Wificall} using \textbf{Node.js, PHP, Asterisk, RabbitMQ, Redis, MySQL, React} within a microservice architecture, a web and mobile VoIP product enabling seamless voice-over-IP communication.}
+          \resumeItem{Developed an automated billing system using \textbf{Node.js, MongoDB} that powers the customer billing for Tizeti services.}
+          \resumeItem{Engineered a comprehensive DevOps and monitoring stack using \textbf{Jenkins} for CI/CD and \textbf{Docker Swarm} for orchestration; integrated monitoring with self-hosted \textbf{Jaeger, Loki, Promtail, Prometheus}, and \textbf{Grafana}.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Nursedash}{Nov. 2020 -- Nov. 2023}
+      {Senior Software Engineer}{USA}
+      \resumeItemListStart
+          \resumeItem{Built the \textbf{Nursedash Reliability System} to rank clinicians based on effectiveness and reliability, enabling leadership to identify top performers across the workforce.}
+          \resumeItem{Designed and developed the \textbf{Auto-Select System} using \textbf{Nodejs, GraphQL, Postgres, BullMQ}, an intelligent shift matching engine that automates selection and approval from thousands of shift applications. It monitors applicant confirmations and reassigns unconfirmed shifts, resulting in a \textbf{7\% month-over-month increase} in shift completion rates.}
+          \resumeItem{Developed the \textbf{payment infrastructure} responsible for clinician payouts post-shift completion and automated reconciliation for the payroll team.}
+          \resumeItem{Engineered the \textbf{Daily pay system} responsible for improving the clinician payout time from weekly to daily.}
+          \resumeItem{Re-architected the Nursedash backend into a \textbf{microservices architecture} to enhance scalability and performance. Integrated \textbf{Kafka} for background job queuing and \textbf{Redis} caching to reduce database load and increase response time.}
+          \resumeItem{Led backend performance optimization efforts using \textbf{Redis}, \textbf{Kafka}, and \textbf{microservices}, significantly improving system reliability during peak loads.}
+          \resumeItem{Managed \textbf{DevOps infrastructure}, implementing CI/CD pipelines using \textbf{GitHub Actions}, container orchestration with \textbf{Docker} and \textbf{Kubernetes}, and deployment automation.}
+      
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior software developer (contract)}{April 2020 -- Sep 2020}
+      {StealthRever analytics}{Boston, USA}
+      \resumeItemListStart
+        \resumeItem{Contributed to the design and development of \textbf{Pharmedge}, a global pharmaceutical supply chain platform providing direct access between hospitals and pharmaceutical manufacturers, reducing costs and improving accessibility for end consumers.}
+        \resumeItem{Led the development of key modules including inventory management, purchasing, bidding, and multi-carrier global shipping and logistics.}
+        \resumeItem{Implemented scalable backend systems using \textbf{Node.js}, \textbf{Express}, and \textbf{AWS Serverless} architecture (\textbf{Lambda, DynamoDB, EC2}).}
+        \resumeItem{Engineered the development of a multi-carrier global shipping and monitoring logisitic infrastructure}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+  \resumeSubheading
+     {Software developer (contract)}{Jan 2020 -- April 2020}
+     {Rentzend}{San Francisco, CA}
+     \resumeItemListStart
+      \resumeItem{Contributed to the engineering of \textbf{Rentzend}, a San Francisco-based startup focused on tenancy placement and real estate rental market analysis.}
+      \resumeItem{Built a web scraping system using \textbf{Puppeteer} and \textbf{Cheerio} to gather and compare global real estate pricing and availability, enabling accurate rental projections and data-driven decisions.}
+      \resumeItem{Designed and implemented backend services using \textbf{Node.js}, \textbf{Koa}, and \textbf{Apollo GraphQL}, supporting dynamic user queries and analysis features.}
+      \resumeItem{Developed the frontend using \textbf{React.js}, \textbf{Next.js}, and \textbf{React Apollo} for interactive data visualization and user dashboards.}
+      \resumeItem{Wrote end-to-end and unit tests using \textbf{JEST} and \textbf{Cypress} to ensure system reliability and robustness.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubheading
+  {Backend Engineer (Contract)}{Dec 2017 -- May 2019}
+  {NOUVEAU RICHE MEDIA TECHNOLOGY}{Lagos, Nigeria}
+  \resumeItemListStart
+    \resumeItem{Engineered the backend system of the bank's \textbf{Internet Banking Application} enabling customers to perform inter/intra-bank transfers, airtime purchases, and bill payments.}
+    \resumeItem{Designed and implemented a scalable \textbf{microservice architecture} using \textbf{Node.js}, \textbf{Express}, and \textbf{GraphQL} with \textbf{Apollo Server} for seamless API integration.}
+    \resumeItem{Integrated \textbf{RabbitMQ} to manage asynchronous tasks, improving system responsiveness and reducing request load.}
+    \resumeItem{Implemented \textbf{Redis} caching to reduce database load and improve transaction speed.}
+    \resumeItem{Worked with \textbf{MySQL} and \textbf{MongoDB} for structured and flexible data storage.}
+    \resumeItem{Performed \textbf{unit and end-to-end testing} using \textbf{Mocha}, \textbf{Chai}, and \textbf{Supertest} to ensure application stability and performance.}
+    \resumeItem{Collaborated with the frontend team using \textbf{React.js}, \textbf{Redux}, and \textbf{Apollo Client} to deliver a smooth customer experience.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Software Developer (Independent Contractor)}{May 2017 -- Dec 2017}
+  {Great Brands Limited}{Lagos, Nigeria}
+  \resumeItemListStart
+    \resumeItem{Led the development of a high-performance \textbf{logistics application} for real-time tracking of company vehicles, route efficiency monitoring, and mileage analysis.}
+    \resumeItem{Contributed to the development of \textbf{Sunrise}, an eCommerce platform that digitized the company’s retail operations by automating product ordering, checkout, and delivery workflows for distributors.}
+    \resumeItem{Implemented inventory monitoring and warehouse tracking systems across nationwide retail outlets.}
+    \resumeItem{Developed the monolithic backend using \textbf{Node.js}, \textbf{Express}, and followed a test-driven development (TDD) approach.}
+    \resumeItem{Built the frontend in \textbf{React.js} with \textbf{Redux} for state management and integrated APIs to support seamless data flow.}
+    \resumeItem{Performed unit and end-to-end testing using \textbf{Mocha}, \textbf{Jest}, \textbf{Enzyme}, and \textbf{Supertest}.}
+    \resumeItem{Utilized \textbf{MySQL} for relational data, \textbf{Redis} for caching, and \textbf{Elasticsearch} to implement fast and scalable search features.}
+    \resumeItem{Implemented CI/CD pipelines using \textbf{CircleCI} for continuous integration and deployment.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Software Developer}{Jan 2016 -- Apr 2017}
+  {Eazyhire}{Lagos, Nigeria}
+  \resumeItemListStart
+    \resumeItem{Contributed to the development of \textbf{Eazyhire}, Africa’s leading fully insured peer-to-peer sharing and leasing platform.}
+    \resumeItem{Helped build the core \textbf{E-commerce platform} that enables users to list, hire, and lease products with payment, delivery, and return tracking.}
+    \resumeItem{Developed backend functionalities using \textbf{Laravel}, ensuring efficient product listing, leasing workflows, and user transactions.}
+    \resumeItem{Implemented and optimized data storage and retrieval with \textbf{MySQL} for high performance and data integrity.}
+  \resumeItemListEnd
+
+
+-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Oyapost (https://oyapost.com)} \href{mailto:michgboxy@gmail.com} $|$ \emph{Nextjs, React, Golang PostgreSQL, Docker}}{May 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack social media scheduling tool using with Golang Backend and React/Nextjs frontend, the application schedules content to X/twitter, Tiktok, Threads, Instagram, Facebook, Pinterest, Reddit, Youtube}
+            \resumeItem{Implemented the automated Key rotating to prevent authorized keys from expiring and prevent users from having to re-authorize}
+            \resumeItem{Used Loki, Grafana, Prometheus, Promtail, Jaeger fro tracing and monitoring}
+            \resumeItem{Used Asynq for asynchronous tasks}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Nodejs, PHP, Javascript, Golang, GraphQL, Typescript} \\
+     \textbf{Frameworks}{: React, Node.js, Express, Koa, Vue, Laravel, ReactNative, Microservices} \\
+     \textbf{Developer Tools}{: Docker, Kubernetes, ElasticSearch, Kafka, RabbitMQ} \\
+     \textbf{Database}{: MySQL, PostgreSQL, MongoDB, Redis} \\
+     \textbf{Cloud expertise}{: AWS, GCP, MongoDB, Azure} \\
+     \textbf{Devops tools}{: Kubernetes, Docker, Github actions, Jenkins, Shell scripting, Bash scripting, Jaegar, Loki, Promtail, Grafana, Prometheus}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

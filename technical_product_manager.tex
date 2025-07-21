@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Elufioye Michael
+% Based off of: https://github.com/michgboxy2
+% Repurposed for Technical Product Manager by Gemini
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Elufioye Michael} \\ \vspace{1pt}
+    \small Technical Product Manager \\ \vspace{4pt}
+    \small $|$ \href{mailto:michgboxy@gmail.com}{\underline{michgboxy@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/michgboxy}{\underline{linkedin.com/in/michgboxy}} $|$
+    \href{https://github.com/michgboxy2}{\underline{github.com/michgboxy2}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{A results-oriented Technical Product Manager with over 8 years of experience translating complex technical challenges into market-leading products. Proven ability to own the entire product lifecycle, from ideation and roadmapping to launch and iteration. Expert in collaborating with engineering, design, and business teams to deliver user-centric solutions that drive revenue growth and improve operational efficiency. Deeply skilled in agile methodologies, data-driven decision-making, and bridging the gap between technical implementation and strategic business goals.} \\
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Obafemi Awolowo University}{Ile-Ife, Nigeria}
+      {B.Sc., Departments of Biochemistry}{Aug. 2009 -- Nov. 2013}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tizeti inc (YC 17)}{Lagos, Nigeria}
+      {Senior Technical Product Manager}{December 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Defined the product vision, strategy, and roadmap for \textbf{TizetiOS}, the core operational software powering business across Nigeria, Ghana, and Côte d'Ivoire.}
+        \resumeItem{Translated business needs from finance and admin teams into product requirements for critical billing, invoicing, and payroll modules, improving operational efficiency.}
+        \resumeItem{Led the end-to-end product development of \textbf{Wificall}, a VoIP product, from concept and technical design to market launch, utilizing a microservice architecture.}
+        \resumeItem{Drove the product strategy for an automated billing system, resulting in improved accuracy and scalability of customer billing for Tizeti services.}
+        \resumeItem{Ensured product reliability and performance by championing a comprehensive DevOps and monitoring stack, leading to enhanced system uptime and data-driven incident response.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Nursedash}{USA (Remote)}
+      {Senior Product Manager, Technical}{Nov. 2020 -- Nov. 2023}
+      \resumeItemListStart
+        \resumeItem{Conceptualized and delivered the \textbf{Nursedash Reliability System}, a data-driven product that enabled leadership to identify and reward top-performing clinicians.}
+        \resumeItem{Owned the product roadmap for the \textbf{Auto-Select System}, an intelligent matching engine that automated shift assignments and increased shift completion rates by \textbf{7\% month-over-month}.}
+        \resumeItem{Led the product strategy for the payment infrastructure, launching a \textbf{Daily Pay system} that reduced clinician payout times from weekly to daily, boosting user satisfaction.}
+        \resumeItem{Spearheaded the strategic migration to a \textbf{microservices architecture}, defining technical requirements to enhance product scalability and performance during peak loads.}
+        \resumeItem{Managed the product backlog and prioritized features for the backend platform, leveraging \textbf{Redis}, \textbf{Kafka}, and \textbf{microservices} to improve system reliability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {StealthRever analytics}{Boston, USA (Contract)}
+      {Technical Product Manager}{April 2020 -- Sep. 2020}
+      \resumeItemListStart
+        \resumeItem{Contributed to the product strategy and feature definition for \textbf{Pharmedge}, a global pharmaceutical supply chain platform connecting hospitals directly with manufacturers.}
+        \resumeItem{Translated market needs into technical requirements for key modules including inventory management, purchasing, and multi-carrier global logistics.}
+        \resumeItem{Collaborated with engineering to deliver a scalable backend using \textbf{AWS Serverless} architecture, reducing operational costs and improving platform accessibility.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+     {Rentzend}{San Francisco, CA (Contract)}
+     {Product-Focused Software Engineer}{Jan 2020 -- April 2020}
+     \resumeItemListStart
+      \resumeItem{Informed product strategy by engineering a web scraping system to gather and analyze global real estate pricing, enabling data-driven rental projections.}
+      \resumeItem{Collaborated on backend service design using \textbf{Node.js}, \textbf{Koa}, and \textbf{GraphQL} to support dynamic data visualization and user analysis dashboards.}
+      \resumeItem{Worked with the product team to define requirements for frontend features, ensuring alignment between user needs and technical implementation.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Oyapost (https://oyapost.com)} $|$ \emph{Next.js, React, Golang, PostgreSQL, Docker}}{May 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Acting as Product Owner for a full-stack social media scheduling tool; defining the product roadmap, user stories, and feature prioritization.}
+            \resumeItem{Designing product features such as automated key rotation to enhance user experience by preventing service interruptions.}
+            \resumeItem{Implementing a data-driven approach using monitoring tools (\textbf{Loki, Grafana, Prometheus}) to track performance and guide product iterations.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Product Management}{: Agile \& Scrum, Product Roadmapping, Lifecycle Management, Stakeholder Management, Data Analysis, User-Centric Design, A/B Testing, Competitive Analysis} \\
+     \textbf{Languages}{: Node.js, Golang, PHP, Javascript, Typescript, SQL, GraphQL} \\
+     \textbf{Architecture \& Systems}{: Microservices, Event-Driven Architecture, API Design, System Design} \\
+     \textbf{Developer Tools}{: Docker, Kubernetes, Kafka, RabbitMQ, Jenkins, Git, Jaeger, Grafana, Prometheus} \\
+     \textbf{Cloud \& Databases}{: AWS, GCP, Azure, PostgreSQL, MySQL, MongoDB, Redis}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
